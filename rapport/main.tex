@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\input{preambule}
+
+\begin{document}
+
+% --- Couverture 
+\thispagestyle{empty}
+\input{couverture/couverture}
+
+% --- Page blanche
+\cleardoublepage
+\null
+\thispagestyle{empty}
+\newpage
+
+% --- Corps du rapport 
+\newpage
+\input{corps/corps}
+
+% --- Références
+\newpage
+\input{ressources/references}
+
+% --- Annexes
+\newpage
+\input{annexes/annexes}
+
+
+\end{document}
+
