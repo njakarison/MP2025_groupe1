@@ -1,50 +1,69 @@
-% Logos en haut
-\noindent
-\makebox[\textwidth][c]{%
-  \begin{minipage}[c]{2.5cm}
-    \centering
-    \includegraphics[width=2.5cm]{couverture/images/image1.png}
-  \end{minipage}
-  \hspace{0.5cm}
-  \begin{minipage}[c]{10cm}
-    \centering
-    \includegraphics[width=10cm]{couverture/images/image2.jpg}
-  \end{minipage}
-  \hspace{0.5cm}
-  \begin{minipage}[c]{2.5cm}
-    \centering
-    \includegraphics[width=2.5cm]{couverture/images/image3.png}
-  \end{minipage}%
-}
-\vspace{1cm}
-\begin{center}
-\normalsize\textbf{REPOBLIKAN’I MADAGASIKARA} \\[0.3em]
-\small Fitiavana – Tanindrazana – Fandrosoana \\[1.5em]
-\normalsize\textbf{MINISTERE DE L’ENSEIGNEMENT SUPERIEUR\\ET DE LA RECHERCHE SCIENTIFIQUE}
+\begin{titlepage}
+ \begin{tikzpicture}[remember picture,overlay,inner sep=0,outer sep=0]
+		\draw[blue!70!black,line width=4pt] ([xshift=-1.5cm,yshift=-2cm]current page.north east) coordinate (A)--([xshift=1.5cm,yshift=-2cm]current page.north west) coordinate(B)--([xshift=1.5cm,yshift=2cm]current page.south west) coordinate (C)--([xshift=-1.5cm,yshift=2cm]current page.south east) coordinate(D)--cycle;
+		
+		\draw ([yshift=0.5cm,xshift=-0.5cm]A)-- ([yshift=0.5cm,xshift=0.5cm]B)--
+		([yshift=-0.5cm,xshift=0.5cm]B) --([yshift=-0.5cm,xshift=-0.5cm]B)--([yshift=0.5cm,xshift=-0.5cm]C)--([yshift=0.5cm,xshift=0.5cm]C)--([yshift=-0.5cm,xshift=0.5cm]C)-- ([yshift=-0.5cm,xshift=-0.5cm]D)--([yshift=0.5cm,xshift=-0.5cm]D)--([yshift=0.5cm,xshift=0.5cm]D)--([yshift=-0.5cm,xshift=0.5cm]A)--([yshift=-0.5cm,xshift=-0.5cm]A)--([yshift=0.5cm,xshift=-0.5cm]A);
+		
+		
+		\draw ([yshift=-0.3cm,xshift=0.3cm]A)-- ([yshift=-0.3cm,xshift=-0.3cm]B)--
+		([yshift=0.3cm,xshift=-0.3cm]B) --([yshift=0.3cm,xshift=0.3cm]B)--([yshift=-0.3cm,xshift=0.3cm]C)--([yshift=-0.3cm,xshift=-0.3cm]C)--([yshift=0.3cm,xshift=-0.3cm]C)-- ([yshift=0.3cm,xshift=0.3cm]D)--([yshift=-0.3cm,xshift=0.3cm]D)--([yshift=-0.3cm,xshift=-0.3cm]D)--([yshift=0.3cm,xshift=-0.3cm]A)--([yshift=0.3cm,xshift=0.3cm]A)--([yshift=-0.3cm,xshift=0.3cm]A);
+	\end{tikzpicture}
+	
+	\hspace{-0.5cm}\includegraphics[width=0.2\linewidth]{couverture/images/image1}
+	\hspace{1.5cm}
+	\begin{minipage}{0.5\linewidth}
+		REPOBLIKAN'I MADAGASIKARA\\
+		Fitiavana-Tanindrazana-Fandrosoana \\ \vspace{0.5cm}
+	\end{minipage}
+	\hfill
+	\includegraphics[width=0.2\linewidth]{couverture/images/image3}
+	\begin{center}
+		MINISTÈRE DE L’ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE
+		SCIENTIFIQUE\\
+		ÉCOLE SUPÉRIEURE POLYTECHNIQUE D’ANTSIRANANA\\
+		Mention : STIC\\
+		
 \end{center}
+		\vspace{0.5cm}
+	\begin{center}
+		\hrule width 16cm height 2pt
+		\vspace{0.1cm}
+		\hrule width 16cm height 1pt
+			\vspace{0.2cm}
+		\Large \textbf{MINI-PROJET}
+			\vspace{0.2cm}
+			\hrule width 16cm height 1pt
+				\vspace{0.1cm}
+			\hrule width 16cm height 2pt
+	\end{center}
+			\vspace{0.5cm}
+	\begin{center}
+		\Large \textbf{\textcolor{blue}{INSTALLATION ET CONFIGURATION AUTOMATIQUE D'UN SERVEUR DHCP ET FIREWILL SUR UN SERVEUR DEBIAN AVEC VirtualBox et Docker}}
+		%\Large  \textbf{\textcolor{blue}{APPLICATION AUX BATTERIES LITHIUM-ION}}
+	\end{center}
+		\vspace{0.5cm}
+	\hspace{2cm}	\small Réalisé par :
+	\begin{center}
+	\begin{tabular}{ll}
+	
+	 &  \small\textbf{HENINTSOA Vinciane }\\
+	  &  \small\textbf{RAMAMONJISON Michel Terigue Gerioux }\\
+	   &  \small\textbf{RAZAFIMANDIMBY Hery Nirina Cecilia }\\
+	    &  \small\textbf{VERONIRINA Kimberly Felix }\\
+	
+	\end{tabular}
+	\end{center}
+\vspace{0.5cm}
+	\hspace{2cm} \small Enseignant:\\
 \begin{center}
-\normalsize\textbf{UNIVERSITE D’ANTSIRANANA} \\[0.5em]
-\normalsize\textbf{ECOLE SUPERIEURE POLYTECHNIQUE} \\[1.5em]
-\small\textbf{MENTION : STIC} \\[0.3em]
-\small\textbf{GRADE : MASTER}
+\vspace{-0.8cm}
+	\begin{tabular}{ll}	
+	&  \small\textbf{Mr RANDRIAMASINORO Njakarison Menja }\\
+	\end{tabular}
 \end{center}
-\begin{center}
-\large\textbf{MINI PROJET - INFORMATIQUE} \\[2em]
-\LARGE\textbf{Installation et Configuration Automatisée}\\
-\LARGE\textbf{d’un Serveur DHCP et Firewall sur un}\\
-\LARGE\textbf{Serveur Debian avec VirtualBox et Docker}
-\end{center}
-\vspace{2cm}
-\small\textbf{Réalisé par :}
-\begin{itemize}
-  \item HENINTSOA Vinciane
-  \item RAMAMONJISON Michel Terigue Gerioux
-  \item RAZAFIMANDIMBY Hery Nirina Cecilia
-  \item VERONIRINA Kimberly Felix
-\end{itemize}
-\vspace{1em}
-\small\textbf{Enseignant :} Mr RANDRIAMASINORO Njakarison Menja
-\vspace{5em}
-\begin{center}
-\small Année universitaire : 2024 -- 2025
-\end{center}
+	\vspace{1cm}
+	\begin{center}
+		\small \textbf{\textit{Année Universitaire 2023-2024}}
+	\end{center}
+\end{titlepage}
