@@ -71,7 +71,7 @@ subnet $RESEAU netmask $NETMASK {
 }
 EOL
 
-systemctl restart isc-dhcp-server.service
+/etc/init.d/isc-dhcp-server start
 EOF
 
 # Dockerfile
